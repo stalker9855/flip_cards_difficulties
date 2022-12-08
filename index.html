@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lab12</title>
+</head>
+<body>
+        <div class="card" id="btn">
+            <div class="card__inner">
+                <div class="card__face card__face--front">
+                    <h2 id="front_word"></h2>
+                </div>
+                <div class="card__face card__face--back">
+                    <div class="card__content">
+                        <div class="card__header">   
+                        </div>
+                        <div class="card__body">
+                            <h3 id="back_word">123</h3>
+                            <p id="translate_word"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="footer">
+            <input type="text" placeholder="Answer" id="input">
+            <button id="prev">&#129064;</button>
+            <p id="switch">1/10</p>
+            <button id="next">&#129066;</button>
+        </div>
+        <div class="status">
+            <p id="correct">Correct: 0</p>
+            <p id="wrong">Wrong: 0</p>
+        </div>
+        <div class="form" id="myForm">
+            <p>Select level:</p>
+            <input type="radio" name="difficulty" id="novice" value="0">
+            <label for="novice">Novice</label><br>
+            <input  type="radio" name="difficulty" id="medium" value="1">
+            <label for="medium">Medium</label><br>
+            <input  type="radio" name="difficulty" id="hard" value="2">
+            <label for="hard">Hard</label><br>
+            <button id="submit">Submit</button>
+        </div>
+        
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
